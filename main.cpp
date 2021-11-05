@@ -6,7 +6,7 @@
     место для творчества
 */
 
-
+/*
     void drawGraf(){
     glColor3f(0.2,0.5,0.8);
     glBegin(GL_LINES);
@@ -21,26 +21,27 @@
     glColor3f(1,1,1);
     glBegin(GL_LINE_STRIP);
     for(float i=-2.0;i<5.0;i+=0.1)
-//        glVertex2f(i*0.5,-0.23*(i*i)+i);//1 график
-//        glVertex2f(i,-0.1*i*i+2*i+1); //2график
-//        glVertex2f(i,-2*i*i+3*i-1);   //3 график
+       glVertex2f(i*0.5,-0.23*(i*i)+i);//1 график
+        glVertex2f(i,-0.1*i*i+2*i+1); //2график
+        glVertex2f(i,-2*i*i+3*i-1);   //3 график
         glVertex2f(i,(-3+i)*(-3*i)+2*i+5); //4 график
 
     glEnd();
 }
-
+*/
 void renderScene(void) {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // эта функция должна здесь жить
 
 
-     glPushMatrix();
+    /* 
+    glPushMatrix();
      glScalef(0.2,0.2,0);
      drawGraf();
      glPopMatrix();
+*/
 
 
-
-   /*
+   
      //небо
     glColor3f(0.3,0.4,0.8);
     glBegin(GL_QUADS);
@@ -135,7 +136,7 @@ void renderScene(void) {
 
     //заяц
     drawBunny(0,-0.95,0);
-    */
+    
 
     // эта функция должна здесь жить
     glutSwapBuffers();
